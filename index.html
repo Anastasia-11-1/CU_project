@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погодный сервис</title>
+</head>
+<body>
+    <h1>Добро пожаловать в погодный сервис!</h1>
+    <form action="/weather" method="post">
+        <h2>Введите координаты:</h2>
+        <label for="lat_st">Широта начальной точки:</label>
+        <input type="text" name="lat_st" required><br>
+        <label for="lon_st">Долгота начальной точки:</label>
+        <input type="text" name="lon_st" required><br>
+        <label for="lat_end">Широта конечной точки:</label>
+        <input type="text" name="lat_end" required><br>
+        <label for="lon_end">Долгота конечной точки:</label>
+        <input type="text" name="lon_end" required><br>
+        <button type="submit">Получить прогноз</button>
+    </form>
+</body>
+</html>
